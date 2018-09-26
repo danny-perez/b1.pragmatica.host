@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="js/common_function.js"></script>
   </head>
   <body class="app sidebar-mini rtl">
     <!-- Navbar-->
@@ -83,11 +84,7 @@
       </div>
       <ul class="app-menu">
         <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a></li>
-        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a></li>
+        <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Detailed</span></a></li>
       </ul>
     </aside>
     <main class="app-content">
@@ -157,26 +154,13 @@
         <div class="col-md-6">
           <div class="tile">
             <h3 class="tile-title">This graph shows</h3>
-            <ul>
-              <li>Built with Bootstrap 4, SASS and PUG.js</li>
-              <li>Fully responsive and modular code</li>
-              <li>Seven pages including login, user profile and print friendly invoice page</li>
-              <li>Smart integration of forgot password on login page</li>
-              <li>Chart.js integration to display responsive charts</li>
-              <li>Widgets to effectively display statistics</li>
-              <li>Data tables with sort, search and paginate functionality</li>
-              <li>Custom form elements like toggle buttons, auto-complete, tags and date-picker</li>
-              <li>A inbuilt toast library for providing meaningful response messages to user's actions</li>
-            </ul>
-            <p>Vali is a free and responsive admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.</p>
+            <div style="font-size: 16px;">The above graphs show emotion statistics recorded by 5 cameras for today (blue graph) and for the previous day (gray graph). The cameras are located in a room where the same people come every day, so the resulting statistics shows the change in the totality of their emotions.</div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="tile">
             <h3 class="tile-title">This graph shows</h3>
-            <p>This theme is not built for a specific framework or technology like Angular or React etc. But due to it's modular nature it's very easy to incorporate it into any front-end or back-end framework like Angular, React or Laravel.</p>
-            <p>Go to <a href="http://pratikborsadiya.in/blog/vali-admin" target="_blank">documentation</a> for more details about integrating this theme with various frameworks.</p>
-            <p>The source code is available on GitHub. If anything is missing or weird please report it as an issue on <a href="https://github.com/pratikborsadiya/vali-admin" target="_blank">GitHub</a>. If you want to contribute to this theme pull requests are always welcome.</p>
+              <div style="font-size: 16px;">The above diagram illustrates the emotion statistics recorded by 5 cameras over a period of 15 seconds. The cameras are located in a room where 80% of the time are the same people. They go to rest or have lunch for a short time, which does not affect the statistics of the ratio of emotions.</div>
           </div>
         </div>
       </div>
@@ -191,87 +175,169 @@
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script type="text/javascript">
-      var data = {
-      	labels: ["sadness", "anger", "fear", "happy", "surprise", "disgust", "contempt", "neutral"],
-      	datasets: [
-      		{
-      			label: "My First dataset",
-      			fillColor: "rgba(220,220,220,0.2)",
-      			strokeColor: "rgba(220,220,220,1)",
-      			pointColor: "rgba(220,220,220,1)",
-      			pointStrokeColor: "#fff",
-      			pointHighlightFill: "#fff",
-      			pointHighlightStroke: "rgba(220,220,220,1)",
-      			data: [65, 59, 80, 81, 56, 71, 40, 84]
-      		},
-      		{
-      			label: "My Second dataset",
-      			fillColor: "rgba(151,187,205,0.2)",
-      			strokeColor: "rgba(151,187,205,1)",
-      			pointColor: "rgba(151,187,205,1)",
-      			pointStrokeColor: "#fff",
-      			pointHighlightFill: "#fff",
-      			pointHighlightStroke: "rgba(151,187,205,1)",
-      			data: [28, 48, 40, 19, 96, 37, 74, 92]
-      		}
-      	]
-      };
-      var pdata = [
-      	{
-      		value: 300,
-      		color: "#46BFBD",
-      		highlight: "#5AD3D1",
-      		label: "Complete"
-      	},
-      	{
-      		value: 50,
-      		color:"#F7464A",
-      		highlight: "#FF5A5E",
-      		label: "In-Progress"
-      	},
-          {
-              value: 195,
-              color: "#93bf3c",
-              highlight: "#bed371",
-              label: "Complete"
-          },
-          {
-              value: 45,
-              color:"#17a2f7",
-              highlight: "#9eebff",
-              label: "In-Progress"
-          },
-          {
-              value: 210,
-              color: "#bf7e33",
-              highlight: "#d3c6a5",
-              label: "Complete"
-          },
-          {
-              value: 93,
-              color:"#f737cb",
-              highlight: "#ffb5fd",
-              label: "In-Progress"
-          },
-          {
-              value: 27,
-              color: "#0b13bf",
-              highlight: "#4340d3",
-              label: "Complete"
-          },
-          {
-              value: 39,
-              color:"#8bf70c",
-              highlight: "#76ff20",
-              label: "In-Progress"
-          }
-      ]
-      
-      var ctxl = $("#lineChartDemo").get(0).getContext("2d");
-      var lineChart = new Chart(ctxl).Line(data);
-      
-      var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-      var pieChart = new Chart(ctxp).Pie(pdata);
+        var wt = [];
+        var dt = [];
+        var emo = [];
+        for (var k = 0; k < 8; k++) {
+            dt[k] = randomInt(1, 100);
+            wt[k] = randomInt(1, 100);
+            emo[k] = randomInt(1, 100);
+        }
+        emo[5] = Math.max(emo[0], emo[1], emo[2], emo[3], emo[4], emo[5], emo[6], emo[7]);
+        var pdata = [
+            {
+                value: emo[0],
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: "Anger"
+            },
+            {
+                value: emo[1],
+                color: "#F7464A",
+                highlight: "#FF5A5E",
+                label: "Contempt"
+            },
+            {
+                value: emo[2],
+                color: "#93bf3c",
+                highlight: "#bed371",
+                label: "Disgust"
+            },
+            {
+                value: emo[3],
+                color: "#17a2f7",
+                highlight: "#9eebff",
+                label: "Fear"
+            },
+            {
+                value: emo[4],
+                color: "#bf7e33",
+                highlight: "#d3c6a5",
+                label: "Hapiness"
+            },
+            {
+                value: emo[5],
+                color: "#f737cb",
+                highlight: "#ffb5fd",
+                label: "Neutral"
+            },
+            {
+                value: emo[6],
+                color: "#0b13bf",
+                highlight: "#4340d3",
+                label: "Sadness"
+            },
+            {
+                value: emo[7],
+                color: "#8bf70c",
+                highlight: "#76ff20",
+                label: "Surprice"
+            }
+        ]
+        var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+        var pieChart = new Chart(ctxp).Pie(pdata);
+        setInterval(f,10000);
+        function f() {
+            var du = randomInt(3, 10);
+            $('#detect_users').html('<b>'+du+'</b>');
+            var wt = [];
+            var dt = [];
+            var emo = [null,null,null,null,null,null,null,null];
+            for (var k = 0; k < 8; k++) {
+                dt[k] = randomInt(1, 100);
+                wt[k] = randomInt(1, 100);
+                emo[k] = randomInt(1, 100);
+            }
+            emo[5] = Math.max(emo[0], emo[1], emo[2], emo[3], emo[4], emo[5], emo[6], emo[7]);
+            var pdata = [
+                {
+                    value: emo[0],
+                    color: "#46BFBD",
+                    highlight: "#5AD3D1",
+                    label: "Anger",
+                    title: "Anger"
+                },
+                {
+                    value: emo[1],
+                    color: "#F7464A",
+                    highlight: "#FF5A5E",
+                    label: "Contempt"
+                },
+                {
+                    value: emo[2],
+                    color: "#93bf3c",
+                    highlight: "#bed371",
+                    label: "Disgust"
+                },
+                {
+                    value: emo[3],
+                    color: "#17a2f7",
+                    highlight: "#9eebff",
+                    label: "Fear"
+                },
+                {
+                    value: emo[4],
+                    color: "#bf7e33",
+                    highlight: "#d3c6a5",
+                    label: "Hapiness"
+                },
+                {
+                    value: emo[5],
+                    color: "#f737cb",
+                    highlight: "#ffb5fd",
+                    label: "Neutral"
+                },
+                {
+                    value: emo[6],
+                    color: "#0b13bf",
+                    highlight: "#4340d3",
+                    label: "Sadness"
+                },
+                {
+                    value: emo[7],
+                    color: "#8bf70c",
+                    highlight: "#76ff20",
+                    label: "Surprice"
+                }
+            ]
+            var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+            var pieChart = new Chart(ctxp).Pie(pdata);
+        }
+        var wt = [];
+        var dt = [];
+        var emo = [];
+        for (var k = 0; k < 8; k++) {
+            dt[k] = randomInt(1, 100);
+            wt[k] = randomInt(1, 100);
+            emo[k] = randomInt(1, 100);
+        }
+        var data = {
+            labels: ["sadness", "anger", "fear", "happy", "surprise", "disgust", "contempt", "neutral"],
+            datasets: [
+                {
+                    label: "My First dataset",
+                    fillColor: "rgba(220,220,220,0.2)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(220,220,220,1)",
+                    data: [dt[0], dt[7], dt[2], dt[3], dt[4], dt[5], dt[6], dt[1]]
+                },
+                {
+                    label: "My Second dataset",
+                    fillColor: "rgba(151,187,205,0.2)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    pointColor: "rgba(151,187,205,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: [wt[0], wt[1], wt[2], wt[3], wt[4], wt[5], wt[6], wt[7]]
+                }
+            ]
+        };
+        var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+        var lineChart = new Chart(ctxl).Line(data);
     </script>
   </body>
 </html>

@@ -1,136 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <!-- Twitter meta-->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:site" content="@pratikborsadiya">
-    <meta property="twitter:creator" content="@pratikborsadiya">
-    <!-- Open Graph Meta-->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Vali Admin">
-    <meta property="og:title" content="Vali - Free Bootstrap 4 admin theme">
-    <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
-    <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
-    <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Charts - Vali Admin</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- Font-icon css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body class="app sidebar-mini rtl">
-    <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
-      <ul class="app-nav">
-        <li class="app-search">
-          <input class="app-search__input" type="search" placeholder="Search">
-          <button class="app-search__button"><i class="fa fa-search"></i></button>
-        </li>
-        <!--Notification Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-          <ul class="app-notification dropdown-menu dropdown-menu-right">
-            <li class="app-notification__title">You have 4 new notifications.</li>
-            <div class="app-notification__content">
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Lisa sent you a mail</p>
-                    <p class="app-notification__meta">2 min ago</p>
-                  </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Mail server not working</p>
-                    <p class="app-notification__meta">5 min ago</p>
-                  </div></a></li>
-              <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                  <div>
-                    <p class="app-notification__message">Transaction complete</p>
-                    <p class="app-notification__meta">2 days ago</p>
-                  </div></a></li>
-              <div class="app-notification__content">
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Lisa sent you a mail</p>
-                      <p class="app-notification__meta">2 min ago</p>
-                    </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Mail server not working</p>
-                      <p class="app-notification__meta">5 min ago</p>
-                    </div></a></li>
-                <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
-                    <div>
-                      <p class="app-notification__message">Transaction complete</p>
-                      <p class="app-notification__meta">2 days ago</p>
-                    </div></a></li>
-              </div>
-            </div>
-            <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
-          </ul>
-        </li>
-        <!-- User Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-            <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-            <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-    </header>
-    <!-- Sidebar menu-->
-    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
-    <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
-        <div>
-          <p class="app-sidebar__user-name">John Doe</p>
-          <p class="app-sidebar__user-designation">Frontend Developer</p>
+<head>
+  <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+  <title>PRAGMATICA EMOTION</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Main CSS-->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- Font-icon css-->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/common_function.js"></script>
+</head>
+<body class="app sidebar-mini rtl">
+<!-- Navbar-->
+<header class="app-header"><a class="app-header__logo" href="index.html">Pragmatica</a>
+  <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+  <!-- Navbar Right Menu-->
+  <ul class="app-nav">
+    <li class="app-search">
+      <input class="app-search__input" type="search" placeholder="Search">
+      <button class="app-search__button"><i class="fa fa-search"></i></button>
+    </li>
+    <!--Notification Menu-->
+    <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Show notifications"><i class="fa fa-bell-o fa-lg"></i></a>
+      <ul class="app-notification dropdown-menu dropdown-menu-right">
+        <li class="app-notification__title">You have 4 new notifications.</li>
+        <div class="app-notification__content">
+          <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+            <div>
+              <p class="app-notification__message">Lisa sent you a mail</p>
+              <p class="app-notification__meta">2 min ago</p>
+            </div></a></li>
+          <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+            <div>
+              <p class="app-notification__message">Mail server not working</p>
+              <p class="app-notification__meta">5 min ago</p>
+            </div></a></li>
+          <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+            <div>
+              <p class="app-notification__message">Transaction complete</p>
+              <p class="app-notification__meta">2 days ago</p>
+            </div></a></li>
+          <div class="app-notification__content">
+            <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+              <div>
+                <p class="app-notification__message">Lisa sent you a mail</p>
+                <p class="app-notification__meta">2 min ago</p>
+              </div></a></li>
+            <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+              <div>
+                <p class="app-notification__message">Mail server not working</p>
+                <p class="app-notification__meta">5 min ago</p>
+              </div></a></li>
+            <li><a class="app-notification__item" href="javascript:;"><span class="app-notification__icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+              <div>
+                <p class="app-notification__message">Transaction complete</p>
+                <p class="app-notification__meta">2 days ago</p>
+              </div></a></li>
+          </div>
         </div>
-      </div>
-      <ul class="app-menu">
-        <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
-            <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-            <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-            <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
-          </ul>
-        </li>
-        <li><a class="app-menu__item active" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-            <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-            <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-            <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
-          </ul>
-        </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-            <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
-          </ul>
-        </li>
-        <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-            <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-            <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-            <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-            <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-            <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
-            <li><a class="treeview-item" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
-          </ul>
-        </li>
+        <li class="app-notification__footer"><a href="#">See all notifications.</a></li>
       </ul>
-    </aside>
+    </li>
+    <!-- User Menu-->
+    <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+      <ul class="dropdown-menu settings-menu dropdown-menu-right">
+        <li><a class="dropdown-item" href="#"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
+        <li><a class="dropdown-item" href="#"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+        <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+      </ul>
+    </li>
+  </ul>
+</header>
+<!-- Sidebar menu-->
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+<aside class="app-sidebar">
+  <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="img/48.jpg" alt="User Image">
+    <div>
+      <p class="app-sidebar__user-name">PR Emotions</p>
+      <p class="app-sidebar__user-designation">For HR agency</p>
+    </div>
+  </div>
+  <ul class="app-menu">
+    <li><a class="app-menu__item" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+    <li><a class="app-menu__item active" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Detailed</span></a></li>
+  </ul>
+</aside>
     <main class="app-content">
       <div class="app-title">
         <div>
@@ -203,80 +159,180 @@
     <!-- Page specific javascripts-->
     <script type="text/javascript" src="js/plugins/chart.js"></script>
     <script type="text/javascript">
-      var data = {
-      	labels: ["January", "February", "March", "April", "May"],
-      	datasets: [
-      		{
-      			label: "My First dataset",
-      			fillColor: "rgba(220,220,220,0.2)",
-      			strokeColor: "rgba(220,220,220,1)",
-      			pointColor: "rgba(220,220,220,1)",
-      			pointStrokeColor: "#fff",
-      			pointHighlightFill: "#fff",
-      			pointHighlightStroke: "rgba(220,220,220,1)",
-      			data: [65, 59, 80, 81, 56]
-      		},
-      		{
-      			label: "My Second dataset",
-      			fillColor: "rgba(151,187,205,0.2)",
-      			strokeColor: "rgba(151,187,205,1)",
-      			pointColor: "rgba(151,187,205,1)",
-      			pointStrokeColor: "#fff",
-      			pointHighlightFill: "#fff",
-      			pointHighlightStroke: "rgba(151,187,205,1)",
-      			data: [28, 48, 40, 19, 86]
-      		}
-      	]
-      };
-      var pdata = [
-      	{
-      		value: 300,
-      		color:"#F7464A",
-      		highlight: "#FF5A5E",
-      		label: "Red"
-      	},
-      	{
-      		value: 50,
-      		color: "#46BFBD",
-      		highlight: "#5AD3D1",
-      		label: "Green"
-      	},
-      	{
-      		value: 100,
-      		color: "#FDB45C",
-      		highlight: "#FFC870",
-      		label: "Yellow"
-      	}
-      ]
-      
-      var ctxl = $("#lineChartDemo").get(0).getContext("2d");
-      var lineChart = new Chart(ctxl).Line(data);
-      
-      var ctxb = $("#barChartDemo").get(0).getContext("2d");
-      var barChart = new Chart(ctxb).Bar(data);
-      
-      var ctxr = $("#radarChartDemo").get(0).getContext("2d");
-      var radarChart = new Chart(ctxr).Radar(data);
-      
-      var ctxpo = $("#polarChartDemo").get(0).getContext("2d");
-      var polarChart = new Chart(ctxpo).PolarArea(pdata);
-      
-      var ctxp = $("#pieChartDemo").get(0).getContext("2d");
-      var pieChart = new Chart(ctxp).Pie(pdata);
-      
-      var ctxd = $("#doughnutChartDemo").get(0).getContext("2d");
-      var doughnutChart = new Chart(ctxd).Doughnut(pdata);
-    </script>
-    <!-- Google analytics script-->
-    <script type="text/javascript">
-      if(document.location.hostname == 'pratikborsadiya.in') {
-      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      	ga('create', 'UA-72504830-1', 'auto');
-      	ga('send', 'pageview');
-      }
+      f();
+        setInterval(f,10000);
+        function f() {
+            var du = randomInt(3, 10);
+            $('#detect_users').html('<b>' + du + '</b>');
+            var wt = [];
+            var dt0 = []; var dt1 = []; var dt2 = []; var dt3 = []; var dt4 = []; var dt5 = []; var dt6 = []; var dt7 = [];
+            var emo = [null, null, null, null, null, null, null, null];
+            for (var k = 0; k < 8; k++) {
+                dt0[k] = randomInt(1, 100);
+                dt1[k] = randomInt(1, 100);
+                dt2[k] = randomInt(1, 100);
+                dt3[k] = randomInt(1, 100);
+                dt4[k] = randomInt(1, 100);
+                dt5[k] = randomInt(1, 100);
+                dt6[k] = randomInt(1, 100);
+                dt7[k] = randomInt(1, 100);
+                wt[k] = randomInt(1, 100);
+            }
+            emo[5] = Math.max(emo[0], emo[1], emo[2], emo[3], emo[4], emo[5], emo[6], emo[7]);
+            var data = {
+                labels: ["sadness", "anger", "fear", "happy", "surprise", "disgust", "contempt", "neutral"],
+                datasets: [
+                    {
+                        label: "sadness",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#feff5f",
+                        pointHighlightFill: "#fdff5a",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [dt0[0], dt0[7], dt0[2], dt0[3], dt0[4], dt0[5], dt0[6], dt0[1]]
+                    },
+                    {
+                        label: "anger",
+                        fillColor: "rgba(151,187,205,0.2)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#ffb7b7",
+                        pointHighlightFill: "#ffc1f4",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [dt1[0], dt1[7], dt1[2], dt1[3], dt1[4], dt1[5], dt1[6], dt1[1]]
+                    },
+                    {
+                        label: "fear",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#ff7403",
+                        pointHighlightFill: "#ffa337",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [dt2[0], dt2[7], dt2[2], dt2[3], dt2[4], dt2[5], dt2[6], dt2[1]]
+                    },
+                    {
+                        label: "happy",
+                        fillColor: "rgba(151,187,205,0.2)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#37ff11",
+                        pointHighlightFill: "#49ff1c",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [dt3[0], dt3[7], dt3[2], dt3[3], dt3[4], dt3[5], dt3[6], dt3[1]]
+                    },
+                    {
+                        label: "surprise",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#1721ff",
+                        pointHighlightFill: "#4a57ff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [dt4[0], dt4[7], dt4[2], dt4[3], dt4[4], dt4[5], dt4[6], dt4[1]]
+                    },
+                    {
+                        label: "disgust",
+                        fillColor: "rgba(151,187,205,0.2)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#07fff7",
+                        pointHighlightFill: "#86fffd",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [dt5[0], dt5[7], dt5[2], dt5[3], dt5[4], dt5[5], dt5[6], dt5[1]]
+                    },
+                    {
+                        label: "contempt",
+                        fillColor: "rgba(220,220,220,0.2)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#ff0df1",
+                        pointHighlightFill: "#ff82f6",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [dt6[0], dt6[7], dt6[2], dt6[3], dt6[4], dt6[5], dt6[6], dt6[1]]
+                    },
+                    {
+                        label: "neutral",
+                        fillColor: "rgba(151,187,205,0.2)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#ff090c",
+                        pointHighlightFill: "#ff2634",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [dt7[0], dt7[7], dt7[2], dt7[3], dt7[4], dt7[5], dt7[6], dt7[1]]
+                    }
+                ]
+            };
+            var pdata = [
+                {
+                    value: wt[0],
+                    color: "#F7464A",
+                    highlight: "#FF5A5E",
+                    label: "anger"
+                },
+                {
+                    value: wt[1],
+                    color: "#46BFBD",
+                    highlight: "#5AD3D1",
+                    label: "contempt"
+                },
+                {
+                    value: wt[2],
+                    color: "#FDB45C",
+                    highlight: "#FFC870",
+                    label: "disgust"
+                },
+                {
+                    value: wt[3],
+                    color: "#c4f7b8",
+                    highlight: "#63ff3b",
+                    label: "fear"
+                },
+                {
+                    value: wt[4],
+                    color: "#2096bf",
+                    highlight: "#2b73d3",
+                    label: "happiness"
+                },
+                {
+                    value: wt[5],
+                    color: "#fd59ed",
+                    highlight: "#facbff",
+                    label: "neutral"
+                },
+                {
+                    value: wt[6],
+                    color: "#0af70b",
+                    highlight: "#65ff07",
+                    label: "sadness"
+                },
+                {
+                    value: wt[7],
+                    color: "#bf4d06",
+                    highlight: "#d37d28",
+                    label: "surprise"
+                }
+            ]
+
+            var ctxl = $("#lineChartDemo").get(0).getContext("2d");
+            var lineChart = new Chart(ctxl).Line(data);
+
+            var ctxb = $("#barChartDemo").get(0).getContext("2d");
+            var barChart = new Chart(ctxb).Bar(data);
+
+            var ctxr = $("#radarChartDemo").get(0).getContext("2d");
+            var radarChart = new Chart(ctxr).Radar(data);
+
+            var ctxpo = $("#polarChartDemo").get(0).getContext("2d");
+            var polarChart = new Chart(ctxpo).PolarArea(pdata);
+
+            var ctxp = $("#pieChartDemo").get(0).getContext("2d");
+            var pieChart = new Chart(ctxp).Pie(pdata);
+
+            var ctxd = $("#doughnutChartDemo").get(0).getContext("2d");
+            var doughnutChart = new Chart(ctxd).Doughnut(pdata);
+        }
     </script>
   </body>
 </html>
